@@ -10,7 +10,7 @@ Run from the sagemaker/ folder with dev deps installed (boto3 via requirements-a
 Or one-liner (PowerShell):
 
   $env:REPORT_EMAIL_FROM='verified-sender@yourdomain.com'
-  $env:REPORT_EMAIL_TO='kritagya@calljacob.com'
+  $env:REPORT_EMAIL_TO='recipient@yourdomain.com'
   python scripts/send_ses_test_email.py
 
 Sandbox: verify BOTH From and To identities in SES (same region). Production: verify From only.

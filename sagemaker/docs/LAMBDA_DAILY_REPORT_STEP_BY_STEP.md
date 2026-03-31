@@ -1,9 +1,9 @@
 # Step-by-step: Daily email report (Lambda + Docker + EventBridge)
 
-This guide walks you from **“I have a SageMaker endpoint and SES works”** to **“Lambda runs every morning at 8:00 and emails a forecast.”**  
-It matches the code in [`lambda/daily_report/`](../lambda/daily_report/).
+Goal: go from **“SageMaker endpoint and SES work”** to **“Lambda runs every morning at 8:00 and emails a forecast.”**  
+The steps match the code in [`lambda/daily_report/`](../lambda/daily_report/).
 
-**What you will create**
+**Deliverables**
 
 1. A **Docker image** with your Lambda code.  
 2. An **ECR** repository in AWS to store that image.  
@@ -62,7 +62,7 @@ You will use it as **`<ECR_URI_WITHOUT_TAG>`** below (no `:latest` yet).
 3. Go to the **daily_report** folder (inside your project):
 
    ```powershell
-   cd "c:\Kritagya Folder\Machine Learning Projects\Bike_ShARING Linear Reg\sagemaker\lambda\daily_report"
+   cd path\to\your\repo\sagemaker\lambda\daily_report
    ```
 
    If your path differs, use the folder that contains `Dockerfile` and `handler.py`.
@@ -159,11 +159,11 @@ You are in a **narrow** SageMaker view. Do any of the following:
 arn:aws:sagemaker:<REGION>:<ACCOUNT_ID>:endpoint/<ENDPOINT_NAME>
 ```
 
-Example: endpoint `bike-demand-xgb-endpoint-1-2-1` in `us-east-1` for account `575108962180`:
+Example: endpoint `bike-demand-xgb-endpoint-1-2-1` in `us-east-1` for account `123456789012`:
 
-`arn:aws:sagemaker:us-east-1:575108962180:endpoint/bike-demand-xgb-endpoint-1-2-1`
+`arn:aws:sagemaker:us-east-1:123456789012:endpoint/bike-demand-xgb-endpoint-1-2-1`
 
-**Your account ID** is the same 12-digit number as in your ECR URL (`575108962180.dkr.ecr...`). You can double-check: click your **account name** (top-right of the console) → **Account**.
+**Account ID** is the same 12-digit value as in your ECR host (`123456789012.dkr.ecr...`). Confirm under the console account menu → **Account**, or `aws sts get-caller-identity`.
 
 **CLI alternative:**
 
@@ -205,7 +205,7 @@ aws sagemaker list-endpoints --region us-east-1 --query "Endpoints[*].[EndpointN
 
 3. **Review** → name the policy e.g. `BikeDailyReportSagemakerSes` → **Create policy**.
 
-**Beginner tip:** If you get “access denied” when Lambda sends mail, temporarily remove the whole `"Condition"` block under `ses:SendRawEmail` to test (tighten it again later).
+If Lambda gets “access denied” on email, try temporarily removing the `"Condition"` block under `ses:SendRawEmail`, then add it back once sends succeed.
 
 ---
 

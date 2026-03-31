@@ -33,11 +33,11 @@ Use the **same AWS Region** everywhere (`AWS_REGION` in `.env`, Lambda, SageMake
 1. AWS Console → **Amazon SES** → make sure the **region** matches your stack (top-right).
 2. **Configuration** (or **Identities** in newer UI) → **Create identity**.
 3. **Sender (`REPORT_EMAIL_FROM`):**  
-   - Easiest for testing: **Email address** → enter an address you can open (e.g. `reports@calljacob.com` or a no-reply on your domain).  
-   - Or choose **Domain** for `calljacob.com` so any address on that domain can send (requires DNS records).
+   - Easiest for testing: **Email address** → enter an address you can open (e.g. `reports@yourdomain.com`).  
+   - Or choose **Domain** for `yourdomain.com` so any address on that domain can send (requires DNS records).
 4. Complete verification (click the link in the email AWS sends, or complete DNS for domain).
-5. **Recipient (`REPORT_EMAIL_TO`), e.g. `kritagya@calljacob.com`:**  
-   - If your account is still in the **SES sandbox**, you **must** verify this address too: **Create identity** → **Email address** → `kritagya@calljacob.com` → confirm the verification email.  
+5. **Recipient (`REPORT_EMAIL_TO`), e.g. `recipient@yourdomain.com`:**  
+   - If your account is still in the **SES sandbox**, you **must** verify this address too: **Create identity** → **Email address** → enter that address → confirm the verification email.  
    - To send to **any** address without verifying each one: SES → **Account dashboard** → **Request production access** (AWS may take hours to approve).
 
 ### 3b. Optional outbound from the same mailbox
@@ -50,7 +50,7 @@ From the `sagemaker/` folder, with `pip install -r requirements-dev.txt` and `.e
 
 ```text
 REPORT_EMAIL_FROM=verified-sender@yourdomain.com
-REPORT_EMAIL_TO=kritagya@calljacob.com
+REPORT_EMAIL_TO=recipient@yourdomain.com
 AWS_REGION=us-east-1
 ```
 
@@ -70,7 +70,7 @@ python scripts/ses_diagnose.py
 
 Then check, in order:
 
-1. **Spam / Junk / Promotions** (and “Quarantine” or admin digest if `calljacob.com` is hosted on Google Workspace / Microsoft 365).
+1. **Spam / Junk / Promotions** (and “Quarantine” or admin digest if your domain uses Google Workspace / Microsoft 365).
 2. **Correct region:** identities are per-region; sends use `AWS_REGION` in `.env`.
 3. **Sandbox:** recipient must be **verified** unless you have production access (`ses_diagnose.py` hints at sandbox via low daily cap).
 4. **Delay:** wait 5–15 minutes.

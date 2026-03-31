@@ -1,6 +1,6 @@
 # Bike sharing demand forecast
 
-**Hourly bike rental demand prediction** using the UCI Bike Sharing dataset: **XGBoost** feature pipeline, optional **local** experiments, **AWS SageMaker** training and real-time inference, plus a **containerized Lambda** that sends a daily **Excel + HTML** forecast by **Amazon SES**.
+Hourly bike rental demand from the UCI Bike Sharing dataset: XGBoost features, local training, SageMaker hosting, and an optional Lambda that emails a daily Excel/HTML forecast through SES.
 
 ## Repository layout
 
@@ -27,4 +27,11 @@ Full setup, AWS deployment, and daily email: see **[sagemaker/README.md](sagemak
 
 ## License / data
 
-Dataset terms: see **Readme.txt** (Hadi Fanaee-T, UCI / Capital Bikeshare attribution). Code in this repo is contributed by the project owner unless noted.
+Dataset terms: see **Readme.txt** (Hadi Fanaee-T, UCI / Capital Bikeshare attribution).
+
+
+<div align="center">
+
+### Show some ❤️ by starring this repository.
+
+</div>

@@ -1,6 +1,6 @@
 # Bike rental — SageMaker layout
 
-Project structure mirrors the standard SageMaker workflow: raw/processed data, notebooks, `src` training and inference code, config, tests, and shell helpers.
+Folders: raw/processed data, notebooks, `src` (train + inference), config, tests, scripts.
 
 ## Layout
 
@@ -19,7 +19,7 @@ Project structure mirrors the standard SageMaker workflow: raw/processed data, n
 ## Setup
 
 1. Copy `hour.csv` / `day.csv` into `data/raw/` (or run from repo root copies).
-2. Copy `.env.example` to `.env` and set AWS and bucket variables (never commit `.env`).
+2. Copy `.env.example` to `.env` and set AWS and bucket variables. Keep `.env` local only; it is gitignored. If keys ever hit git history, rotate them in IAM and use a clean commit.
 3. **Training / inference (minimal):** `pip install -r src/requirements.txt`
 4. **Notebooks + EDA + model comparison:** `pip install -r requirements-dev.txt` (adds matplotlib, seaborn, scipy, pytest).
 5. For cloud jobs: `pip install -r requirements-aws.txt` (pins **SageMaker SDK 2.x**; v3 removed `sagemaker.sklearn.estimator.SKLearn` used by this repo).
