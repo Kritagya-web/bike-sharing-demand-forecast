@@ -1,0 +1,210 @@
+{
+  "season_by_month": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 2,
+    "5": 2,
+    "6": 2,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 4,
+    "11": 4,
+    "12": 4
+  },
+  "hours": [
+    {
+      "hour": 0,
+      "temp": 0.46,
+      "atemp": 0.4545,
+      "hum": 0.7,
+      "windspeed": 0.1642,
+      "weathersit": 1
+    },
+    {
+      "hour": 1,
+      "temp": 0.46,
+      "atemp": 0.4545,
+      "hum": 0.72,
+      "windspeed": 0.1343,
+      "weathersit": 1
+    },
+    {
+      "hour": 2,
+      "temp": 0.46,
+      "atemp": 0.4545,
+      "hum": 0.73,
+      "windspeed": 0.1343,
+      "weathersit": 1
+    },
+    {
+      "hour": 3,
+      "temp": 0.46,
+      "atemp": 0.4545,
+      "hum": 0.75,
+      "windspeed": 0.1343,
+      "weathersit": 1
+    },
+    {
+      "hour": 4,
+      "temp": 0.44,
+      "atemp": 0.4394,
+      "hum": 0.76,
+      "windspeed": 0.1343,
+      "weathersit": 1
+    },
+    {
+      "hour": 5,
+      "temp": 0.44,
+      "atemp": 0.4394,
+      "hum": 0.77,
+      "windspeed": 0.1343,
+      "weathersit": 1
+    },
+    {
+      "hour": 6,
+      "temp": 0.42,
+      "atemp": 0.4242,
+      "hum": 0.77,
+      "windspeed": 0.1343,
+      "weathersit": 1
+    },
+    {
+      "hour": 7,
+      "temp": 0.44,
+      "atemp": 0.4394,
+      "hum": 0.75,
+      "windspeed": 0.1642,
+      "weathersit": 1
+    },
+    {
+      "hour": 8,
+      "temp": 0.46,
+      "atemp": 0.4545,
+      "hum": 0.71,
+      "windspeed": 0.1642,
+      "weathersit": 1
+    },
+    {
+      "hour": 9,
+      "temp": 0.48,
+      "atemp": 0.4697,
+      "hum": 0.66,
+      "windspeed": 0.194,
+      "weathersit": 1
+    },
+    {
+      "hour": 10,
+      "temp": 0.52,
+      "atemp": 0.4848,
+      "hum": 0.61,
+      "windspeed": 0.194,
+      "weathersit": 1
+    },
+    {
+      "hour": 11,
+      "temp": 0.52,
+      "atemp": 0.5,
+      "hum": 0.55,
+      "windspeed": 0.194,
+      "weathersit": 1
+    },
+    {
+      "hour": 12,
+      "temp": 0.54,
+      "atemp": 0.5152,
+      "hum": 0.51,
+      "windspeed": 0.2239,
+      "weathersit": 1
+    },
+    {
+      "hour": 13,
+      "temp": 0.56,
+      "atemp": 0.5303,
+      "hum": 0.48,
+      "windspeed": 0.2239,
+      "weathersit": 1
+    },
+    {
+      "hour": 14,
+      "temp": 0.58,
+      "atemp": 0.5455,
+      "hum": 0.46,
+      "windspeed": 0.2239,
+      "weathersit": 1
+    },
+    {
+      "hour": 15,
+      "temp": 0.58,
+      "atemp": 0.5455,
+      "hum": 0.45,
+      "windspeed": 0.2239,
+      "weathersit": 1
+    },
+    {
+      "hour": 16,
+      "temp": 0.58,
+      "atemp": 0.5455,
+      "hum": 0.46,
+      "windspeed": 0.2239,
+      "weathersit": 1
+    },
+    {
+      "hour": 17,
+      "temp": 0.56,
+      "atemp": 0.5303,
+      "hum": 0.49,
+      "windspeed": 0.2239,
+      "weathersit": 1
+    },
+    {
+      "hour": 18,
+      "temp": 0.54,
+      "atemp": 0.5152,
+      "hum": 0.51,
+      "windspeed": 0.2239,
+      "weathersit": 1
+    },
+    {
+      "hour": 19,
+      "temp": 0.54,
+      "atemp": 0.5152,
+      "hum": 0.55,
+      "windspeed": 0.194,
+      "weathersit": 1
+    },
+    {
+      "hour": 20,
+      "temp": 0.52,
+      "atemp": 0.5,
+      "hum": 0.6,
+      "windspeed": 0.194,
+      "weathersit": 1
+    },
+    {
+      "hour": 21,
+      "temp": 0.5,
+      "atemp": 0.4848,
+      "hum": 0.625,
+      "windspeed": 0.1642,
+      "weathersit": 1
+    },
+    {
+      "hour": 22,
+      "temp": 0.5,
+      "atemp": 0.4848,
+      "hum": 0.66,
+      "windspeed": 0.1642,
+      "weathersit": 1
+    },
+    {
+      "hour": 23,
+      "temp": 0.48,
+      "atemp": 0.4697,
+      "hum": 0.68,
+      "windspeed": 0.1642,
+      "weathersit": 1
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# Only add what the SageMaker Scikit-learn image lacks. Do not reinstall pandas/numpy/sklearn/joblib here —
+# pip upgrading those on top of the image conda env often causes import/binary mismatches (ExitCode 1).
+# Pin below 2.1: newer wheels pull large CUDA/NCCL extras not needed on SageMaker CPU (e.g. ml.m5).
+xgboost>=2.0.3,<2.1

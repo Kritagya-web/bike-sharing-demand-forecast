@@ -1,0 +1,20 @@
+{
+  "$schema_comment": "Copy this file to visio_links.json and fill in URLs. visio_links.json is gitignored.",
+  "updated": "YYYY-MM-DD",
+  "diagrams": [
+    {
+      "id": "aws-architecture",
+      "title": "AWS production (SageMaker + Lambda + SES)",
+      "description": "Visio drawing of S3, training, endpoint, ECR, Lambda, EventBridge, SES.",
+      "visio_url": "https://your-tenant.sharepoint.com/.../Bike-AWS-Architecture.vsdx",
+      "export_png_relative": "exports/aws-architecture.png"
+    },
+    {
+      "id": "ml-data-pipeline",
+      "title": "Data and ML pipeline (local + cloud)",
+      "description": "Preprocess, train-local, SageMaker train, deploy, daily report.",
+      "visio_url": "",
+      "export_png_relative": ""
+    }
+  ]
+}

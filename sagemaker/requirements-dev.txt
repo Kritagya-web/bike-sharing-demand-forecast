@@ -1,0 +1,8 @@
+# Local EDA, notebooks, and categorical analysis (not required on SageMaker training image).
+-r src/requirements.txt
+-r requirements-aws.txt
+python-dotenv>=1.0,<2
+matplotlib>=3.7,<4
+seaborn>=0.13,<1
+scipy>=1.11,<2
+pytest>=7.0,<10

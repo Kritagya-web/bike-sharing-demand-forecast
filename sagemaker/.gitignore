@@ -1,0 +1,12 @@
+models/*
+!models/.gitkeep
+!models/compare_metrics.json
+
+.env
+# Optional private Visio / SharePoint URLs (copy from docs/diagrams/visio_links.example.json)
+docs/diagrams/visio_links.json
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/

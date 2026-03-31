@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Environments
+.env
+.env.local
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Trained artifacts (reproduce with pipeline.py train-local)
+*.pkl
+*.joblib
+sagemaker/out_model/
+
+# Project-specific (see sagemaker/.gitignore for SageMaker tree)
+sagemaker/models/*
+!sagemaker/models/.gitkeep
+!sagemaker/models/compare_metrics.json
+sagemaker/.env
+sagemaker/docs/diagrams/visio_links.json

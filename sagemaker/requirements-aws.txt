@@ -1,0 +1,4 @@
+# SageMaker Python SDK for training (SKLearn estimator) and deploy_endpoint.py.
+# Pin to 2.x: sagemaker>=3 removed sagemaker.sklearn.estimator.SKLearn used by this project.
+sagemaker>=2.220,<3
+boto3>=1.26,<2
