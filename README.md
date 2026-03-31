@@ -27,4 +27,11 @@ Full setup, AWS deployment, and daily email: see **[sagemaker/README.md](sagemak
 
 ## License / data
 
-Dataset terms: see **Readme.txt** (Hadi Fanaee-T, UCI / Capital Bikeshare attribution). Code in this repo is contributed by the project owner unless noted.
+Dataset terms: see **Readme.txt** (Hadi Fanaee-T, UCI / Capital Bikeshare attribution).
+
+
+<div align="center">
+
+### Show some ❤️ by starring this repository
+
+</div>
